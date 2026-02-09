@@ -38,7 +38,7 @@ pico_sdk_init()
 add_subdirectory(lib/pico-tflmicro EXCLUDE_FROM_ALL)
 
 add_executable(ftai ftai.cpp
-
+    inc/bmp280.c
     motor_model.h
 )
 
@@ -52,6 +52,7 @@ pico_enable_stdio_usb(ftai 1)
 # Add the standard library to the build
 target_link_libraries(ftai
     pico_stdlib      # Básico (LEDs, Tempo, USB)
+    hardware_i2c
     hardware_adc     # Conversor Analógico (Joystick)
     pico-tflmicro
         )
