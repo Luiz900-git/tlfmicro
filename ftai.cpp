@@ -4,7 +4,7 @@
 #include "hardware/pwm.h"    // Biblioteca do PWM
 #include "hardware/clocks.h" // Biblioteca de Clocks
 
-// Certifique-se que o arquivo .h gerado no Python está na mesma pasta
+
 #include "motor_model.h" 
 
 #include "tensorflow/lite/micro/micro_interpreter.h"
@@ -20,7 +20,7 @@
 #define JOYSTICK_Y_PIN 27 // ADC1 - Temperatura
 #define BUZZER_PIN 21     // Pino do Buzzer
 
-// Frequência do Buzzer (Sugestão: 100Hz é grave, se quiser mais agudo mude para 1000 ou 2000)
+// Frequência do Buzzer 
 #define BUZZER_FREQUENCY 3000 
 
 // Memória para o modelo (6KB)
@@ -59,7 +59,7 @@ void beep(uint pin, uint duration_ms) {
     // Desliga o som
     pwm_set_gpio_level(pin, 0);
     
-    // Pequena pausa para não virar um som contínuo irritante
+    // Pequena pausa 
     sleep_ms(50); 
 }
 
