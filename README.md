@@ -57,14 +57,4 @@ A IA classifica o funcionamento da máquina em 3 categorias de risco:
 
 ---
 
-## 📂 Estrutura do Projeto
 
-```text
-├── src/
-│   ├── main.cpp          # Código principal (Loop de controle, leitura ADC e lógica)
-│   ├── motor_model.h     # Modelo da Rede Neural (Array Hexadecimal)
-│   └── CMakeLists.txt    # Configuração de compilação
-├── training/
-│   └── notebook.ipynb    # Notebook Python (Geração de dados e Treinamento)
-├── README.md             # Documentação
-└── diagramas/            # Imagens e gráficos
