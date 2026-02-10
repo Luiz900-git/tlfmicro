@@ -54,6 +54,7 @@ target_link_libraries(ftai
     pico_stdlib      # Básico (LEDs, Tempo, USB)
     hardware_i2c
     hardware_adc     # Conversor Analógico (Joystick)
+    hardware_pwm
     pico-tflmicro
         )
 
